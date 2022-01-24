@@ -44,7 +44,7 @@ export default function Landing() {
 
       <Link
         onClick={handleSignIn}
-        style={{ color: '#000000', marginTop: '2rem' }}
+        style={{ color: '#ffffff', marginTop: '2rem' }}
       >
         <strong>Entrar Agora</strong>
       </Link>
