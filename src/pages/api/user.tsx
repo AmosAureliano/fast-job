@@ -1,17 +1,13 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import connect from "../../../utils/database";
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-interface ResponseType {
-  message: string;
-}
+import { User } from './Models/User';
+import UserController from './Controllers/UserController';
 
 export default async (
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> => {
-  const { db } = await connect();
-
-  if (req.method === "POST") {
+  if (req.method === 'POST') {
     const {
       name,
       email,
@@ -24,11 +20,10 @@ export default async (
       admission,
       skills,
       github,
-      user,
       password,
     } = req.body;
 
-    const response = await db.collection("users").insertOne({
+    const response = await UserController.post({
       name,
       email,
       birth_date,
@@ -40,21 +35,25 @@ export default async (
       admission,
       skills,
       github,
-      user,
       password,
-    });
+    } as User);
 
-    res.status(200).json(response.ops[0]);
-  } else if (req.method === "GET") {
-    const response = await db.collection("users").find().toArray();
+    if (response) {
+      res.status(200).json(response);
+    }
 
-    return res.status(200).json(response);
+    return res.status(500).json({ Error: 'Aconteceu algum error' });
+  } else if (req.method === 'GET') {
+    const { email } = req.body;
+
+    const response = await UserController.get(email);
+
+    if (response) {
+      res.status(200).json(response);
+    }
+
+    return res.status(500).json({ Error: 'Aconteceu algum error' });
   } else {
-    res.status(400).json({ message: "Error 404" });
+    res.status(400).json({ message: 'Error 404' });
   }
 };
-
-//User: ijob
-//Password: MpjhsKM4p8c1UDnZ
-
-//mongodb+srv://ijob:MpjhsKM4p8c1UDnZ@cluster0.v18wl.mongodb.net/test

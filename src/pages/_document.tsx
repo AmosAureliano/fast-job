@@ -5,8 +5,8 @@ import Document, {
   NextScript,
   DocumentInitialProps,
   DocumentContext,
-} from "next/document";
-import { ServerStyleSheet } from "styled-components";
+} from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -51,7 +51,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
-          <title>Fast Job - A sua oportunidade</title>
         </Head>
 
         <body>

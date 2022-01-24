@@ -11,16 +11,14 @@ import {
   DataCardInfo,
   ContainerRecentJobs,
   ContainerLabels,
-  CardJob
-} from "../../styles/pages/HomeStyle";
+  CardJob,
+} from '../styles/pages/HomeStyle';
 
-import GridStudentItem from "../components/GridStudentItem";
+import GridStudentItem from '../components/GridStudentItem';
 
 export default function Home(props) {
   return (
     <Container>
-    
-
       <Main>
         <LeftMenu>
           <img src="assets/logo-ok-white.png" alt="First Job White" />
@@ -38,7 +36,7 @@ export default function Home(props) {
             Jobs
           </ItemMenu>
 
-           <ItemMenu>
+          <ItemMenu>
             <ContainerIconMenu>
               <img src="assets/candidates.png" alt="people together icon" />
             </ContainerIconMenu>
@@ -58,7 +56,6 @@ export default function Home(props) {
             </ContainerIconMenu>
             Minha conta
           </ItemMenu>
-
         </LeftMenu>
 
         <Content>
@@ -102,9 +99,8 @@ export default function Home(props) {
                 <span>Usuários premium online</span>
               </DataCardInfo>
             </CardInfo>
-
           </ContainerGeneralInfo>
-          
+
           <ContainerRecentJobs>
             <p>Jobs Publicados recentemente</p>
             <ContainerLabels>
@@ -119,10 +115,12 @@ export default function Home(props) {
               <span>35</span>
               <button>Ativo</button>
               <p>5 dias</p>
-              <button>  <img src="assets/share.png" alt="Share icon" /></button>
+              <button>
+                {' '}
+                <img src="assets/share.png" alt="Share icon" />
+              </button>
             </CardJob>
           </ContainerRecentJobs>
-                    
         </Content>
       </Main>
     </Container>

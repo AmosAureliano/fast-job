@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url("assets/background-landing.png");
+    url('assets/background-landing.png');
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,9 +27,8 @@ export const Header = styled.div`
     font-size: 12px;
   }
   img {
-    min-width: 12vw; 
+    min-width: 12vw;
   }
-  
 `;
 
 export const Text = styled.h1`
@@ -40,8 +39,6 @@ export const Text = styled.h1`
   line-height: 43px;
   text-align: center;
   color: #ffffff;
-
-  
 `;
 
 export const SearchBarContainer = styled.div`
@@ -51,7 +48,7 @@ export const SearchBarContainer = styled.div`
   justify-content: center;
   flex-direction: row;
 
-  input{
+  input {
     height: 8vh;
     min-width: 60vw;
     font-weight: 600;
@@ -60,13 +57,13 @@ export const SearchBarContainer = styled.div`
     color: rgba(83, 81, 81, 0.9);
     background: #ffffff;
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 4rem 0 0  4rem;
+    border-radius: 4rem 0 0 4rem;
     border: none;
     padding-left: 2rem;
 
-    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */   
-    -moz-appearance: none; /* Remove estilo padrão do FireFox */   
-    appearance: none; /* Remove estilo padrão do FireFox*/ 
+    -webkit-appearance: none; /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
   }
   button {
     height: 100%;
@@ -76,22 +73,21 @@ export const SearchBarContainer = styled.div`
     line-height: 20px;
     text-align: center;
     color: #ffffff;
-    background: #955F2D;
+    background: #955f2d;
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 0 4rem 4rem 0;
     border: none;
   }
 
-  a{
+  a {
     color: #fff;
     text-decoration: none;
   }
-  
-  @media(max-width: 960px) {
+
+  @media (max-width: 960px) {
     flex-direction: row;
-   
-  
-    input{
+
+    input {
       min-width: 65vw;
       font-size: 1rem;
     }
@@ -102,4 +98,10 @@ export const SearchBarContainer = styled.div`
       line-height: 30px;
     }
   }
+`;
+
+export const Link = styled.a`
+  cursor: pointer;
+  color: '#FFFFFF';
+  margin-top: '2rem';
 `;

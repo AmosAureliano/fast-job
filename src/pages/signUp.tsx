@@ -20,7 +20,7 @@ import {
   TextCircleButton,
   NextButton,
   TextButton,
-} from "../../styles/pages/SingUpStyle";
+} from '../styles/pages/SingUpStyle';
 
 export default function Home() {
   return (
@@ -68,7 +68,7 @@ export default function Home() {
             ></TextArea>
           </ContentTextArea>
 
-          <SubTitle style={{marginTop: '2rem'}}>Formação</SubTitle>
+          <SubTitle style={{ marginTop: '2rem' }}>Formação</SubTitle>
 
           <ContentSelector>
             <InputLabel>Instituição</InputLabel>
@@ -84,19 +84,18 @@ export default function Home() {
               <InputLabel>Curso</InputLabel>
               <Input type="text" placeholder="Informe o seu curso" />
             </ContentInput>
-          
+
             <ContentInput>
               <InputLabel>Ano de término</InputLabel>
               <Input type="text" placeholder="Ano de término" />
             </ContentInput>
-            
+
             <CircleButton>
               <TextCircleButton>+</TextCircleButton>
             </CircleButton>
-
           </ContentLineTree>
 
-          <SubTitle style={{marginTop: '2rem'}}>Skills</SubTitle>
+          <SubTitle style={{ marginTop: '2rem' }}>Skills</SubTitle>
 
           <ContentSkills>
             <ContentInput>

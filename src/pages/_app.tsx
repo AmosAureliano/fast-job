@@ -1,11 +1,15 @@
-import { GlobalStyles } from "../../styles/GlobalStyle";
+import { GlobalStyles } from '../styles/GlobalStyle';
+
+import Session from '../contexts/Session';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
 
-      <Component {...pageProps} />
+      <Session>
+        <Component {...pageProps} />
+      </Session>
     </>
   );
 }
