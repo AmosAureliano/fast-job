@@ -43,7 +43,7 @@ export const RightSide = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	
 	img{
 		width: 25vw;
 	}

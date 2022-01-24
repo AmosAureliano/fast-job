@@ -97,3 +97,45 @@ export const DataCardInfo = styled.div`
   }
   margin-left: 1rem;
 `;
+
+
+export const ContainerRecentJobs = styled.div`
+  p{
+    font-size: 1.5rem;
+    font-weight: 700
+  }
+`;
+
+export const ContainerLabels = styled.div`  
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;  
+
+  span{
+    font-weight: 600;
+  }
+`;
+
+
+export const CardJob = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-top: 2vh;
+  p{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  p:nth-child(1){
+    margin-left: -5rem;
+  }
+  button{
+    background: none;
+    border: none;
+    outline-style: none;
+  }
+`;

@@ -8,7 +8,10 @@ import {
   ContainerGeneralInfo,
   CardInfo,
   ContainerIconCardInfo,
-  DataCardInfo
+  DataCardInfo,
+  ContainerRecentJobs,
+  ContainerLabels,
+  CardJob
 } from "../../styles/pages/HomeStyle";
 
 import GridStudentItem from "../components/GridStudentItem";
@@ -102,6 +105,23 @@ export default function Home(props) {
 
           </ContainerGeneralInfo>
           
+          <ContainerRecentJobs>
+            <p>Jobs Publicados recentemente</p>
+            <ContainerLabels>
+              <span>Título</span>
+              <span>Interessados</span>
+              <span>Status</span>
+              <span>Tempo restante</span>
+              <span>Ações</span>
+            </ContainerLabels>
+            <CardJob>
+              <p>React developer (itaú)</p>
+              <span>35</span>
+              <button>Ativo</button>
+              <p>5 dias</p>
+              <button>  <img src="assets/share.png" alt="Share icon" /></button>
+            </CardJob>
+          </ContainerRecentJobs>
                     
         </Content>
       </Main>
