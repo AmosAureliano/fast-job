@@ -47,13 +47,9 @@ export const RightSide = styled.div`
 	img{
 		width: 25vw;
 	}
-
-	@media screen and (min-width: 900px) {
-		padding: 10rem 0rem;
-		
-	}
-	@media screen and (min-width: 1500px) {
-		padding: 10git rem 2rem;
+	
+	@media(max-width: 968px){
+		padding: 0 1rem;
 	}
 `;
 
@@ -97,6 +93,10 @@ export const Input = styled.input`
 
 	&:focus {
 		outline: none;
+	}
+
+	@media(max-width: 900px){
+		width: 100vw
 	}
 `;
 
