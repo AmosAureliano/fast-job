@@ -15,7 +15,7 @@ Aplicativo para facilitar a sua reinserção no mercado de trabalho, encontrando
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto clicando ![neste link](https://www.figma.com/file/LKrHABrk4bDuamFRan2I3r/Projeto-FastJob-(adaptar)?node-id=0%3A1). Lembre-se, é necessário ter conta no Figma para acessá-lo.
+Você pode visualizar o layout do projeto clicando [neste link](https://www.figma.com/file/LKrHABrk4bDuamFRan2I3r/Projeto-FastJob-(adaptar)?node-id=0%3A1). Lembre-se, é necessário ter conta no Figma para acessá-lo.
 
 ## Instalação e Execução do projeto
 
@@ -42,9 +42,9 @@ Você pode visualizar o layout do projeto clicando ![neste link](https://www.fig
 ## 💻 Colaboradores
 
 Participaram do projeto os seguintes devs:
-![Amós Aureliano](https://github.com/AmosAureliano)
-![Arthur Amorim](https://github.com/arthur3306)
-![Luiz Carlos Vilela](https://github.com/LuizCarlosVilela/)
+- [Amós Aureliano](https://github.com/AmosAureliano)
+- [Arthur Amorim](https://github.com/arthur3306)
+- [Luiz Carlos Vilela](https://github.com/LuizCarlosVilela/)
 
 ## 📄 Licença
 O presente Projeto está sob a licença MIT. 
