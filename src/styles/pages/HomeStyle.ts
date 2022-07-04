@@ -33,8 +33,6 @@ export const LeftMenu = styled.aside`
   width: 20vw;
   grid-area: filters;
   position: fixed;
-
- 
 `;
 
 export const ItemMenu = styled.button`
@@ -47,6 +45,12 @@ export const ItemMenu = styled.button`
   font-weight: 600;
   width: 15vw;
   margin-top: 2rem;
+  transition: .3s;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+  }
 `
 
 export const ContainerIconMenu = styled.div`
@@ -88,6 +92,8 @@ export const ContainerIconCardInfo = styled.div`
   
   border-radius: .5rem;
   padding: 1rem;
+
+
 `;
 
 export const DataCardInfo = styled.div`

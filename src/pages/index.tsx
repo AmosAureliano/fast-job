@@ -13,12 +13,12 @@ export default function Landing() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    router.push('/signup');
+    router.push('/signUp');
   };
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    router.push('/signin');
+    router.push('/signIn');
   };
 
   return (

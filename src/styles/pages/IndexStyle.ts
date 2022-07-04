@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url('assets/background-landing.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('assets/background-landing.png');
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -60,11 +59,13 @@ export const SearchBarContainer = styled.div`
     border-radius: 4rem 0 0 4rem;
     border: none;
     padding-left: 2rem;
+    outline-style: none;
 
-    -webkit-appearance: none; /* Remove estilo padrão do Chrome */
-    -moz-appearance: none; /* Remove estilo padrão do FireFox */
-    appearance: none; /* Remove estilo padrão do FireFox*/
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none; 
   }
+
   button {
     height: 100%;
     min-width: 10vw;
@@ -77,6 +78,11 @@ export const SearchBarContainer = styled.div`
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 0 4rem 4rem 0;
     border: none;
+    transition: .3s;
+
+    &:hover {
+      background: #955fcd;
+    }
   }
 
   a {
@@ -104,4 +110,9 @@ export const Link = styled.a`
   cursor: pointer;
   color: '#FFFFFF';
   margin-top: '2rem';
+  transition: .3s;
+
+  &:hover {
+    font-size: 1.25rem;
+  }
 `;

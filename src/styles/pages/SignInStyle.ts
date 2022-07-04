@@ -14,11 +14,9 @@ export const Main = styled.main`
     	flex: 1;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		height: 100vh;	
-		
-  }
+		height: 100vh;		
+  	}
 `;
-
 
 export const LeftSide2 = styled.div`
     background-image: url("assets/Rectangle82.png");
@@ -35,8 +33,6 @@ export const LeftSide2 = styled.div`
 		height: 100vh;
 	}
 `;
-
-
 
 export const RightSide = styled.div`
 	padding: 1rem 1rem;
@@ -68,7 +64,6 @@ export const FormUser = styled.div`
 	@media screen and (min-width: 900px) {
 		padding: 3rem 10rem;
 	}
-
 `;
 
 export const ContentInput = styled.div`
@@ -93,6 +88,7 @@ export const Input = styled.input`
 
 	&:focus {
 		outline: none;
+		background-color: #EDE5F5;
 	}
 
 	@media(max-width: 900px){
@@ -121,6 +117,11 @@ export const NextButton = styled.a`
 		width: auto;
 		margin: 0;
 	}
+
+	&:hover {
+		background-color: #D12B1B;
+	}
+	
 	&:focus {
 		outline: none;
 	}
